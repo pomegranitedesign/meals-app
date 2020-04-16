@@ -6,9 +6,6 @@ import { enableScreens } from 'react-native-screens'
 
 import MealsNavigator from './navigation/MealsNavigator'
 
-// TODO: Don't remove
-// This will unlock screens
-// Used for performance
 enableScreens()
 
 const _fetchFonts = () =>

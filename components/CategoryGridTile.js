@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   gridItem: {
     flex: 1,
     margin: 15,
+    elevation: 5,
     height: 150,
   },
 
@@ -41,7 +42,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.6,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 10,
-    elevation: 3,
     padding: 15,
     justifyContent: 'flex-end',
   },

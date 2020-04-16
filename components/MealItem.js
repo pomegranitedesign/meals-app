@@ -9,6 +9,8 @@ import {
   ImageBackground,
 } from 'react-native'
 
+import DefaultText from '../components/DefaultText'
+
 const MealItem = ({
   title,
   onPress,
@@ -33,9 +35,9 @@ const MealItem = ({
           </View>
 
           <View style={{ ...styles.mealRow, ...styles.mealDetails }}>
-            <Text>{cookDuration}m</Text>
-            <Text>{complexity.toUpperCase()}</Text>
-            <Text>{affordability.toUpperCase()}</Text>
+            <DefaultText>{cookDuration}m</DefaultText>
+            <DefaultText>{complexity.toUpperCase()}</DefaultText>
+            <DefaultText>{affordability.toUpperCase()}</DefaultText>
           </View>
         </View>
       </Touchable>
@@ -48,6 +50,8 @@ const styles = StyleSheet.create({
     height: 200,
     width: '100%',
     backgroundColor: '#cccccc',
+    marginVertical: 10,
+    borderRadius: 3,
   },
 
   mealRow: {
@@ -55,28 +59,25 @@ const styles = StyleSheet.create({
   },
 
   mealHeader: {
-    height: '90%',
+    height: '85%',
   },
 
   mealDetails: {
-    height: '10%',
-    paddingHorizontal: 10,
+    height: '15%',
+    padding: 5,
     justifyContent: 'space-between',
+    alignItems: 'center',
   },
 
   bgImage: {
     width: '100%',
     height: '100%',
     justifyContent: 'flex-end',
+    borderRadius: 3,
   },
 
-  title: {
-    fontFamily: 'open-sans-bold',
-    fontSize: 16,
-    color: '#ffffff',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    padding: 15,
-    textAlign: 'center',
+  mealDetail: {
+    fontSize: 12,
   },
 })
 
